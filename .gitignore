@@ -1,27 +1,58 @@
-# 预训练权重与训练产物（体积大，运行时自动下载 / 生成）
-*.pt
+# =========================
+# YOLO pretrained weights
+# =========================
+yolov8n.pt
+yolov8x.pt
 *.onnx
 *.engine
+
+# keep my trained model
+!best_mouse_keyboard.pt
+
+
+# =========================
+# YOLO training results
+# =========================
 runs/
 
-# 数据（不入库，各自采集）
-raw/
-labeled/
-dataset/
-*.jpg
-*.jpeg
-*.png
-*.heic
+# =========================
+# Dataset
+# =========================
 
+dataset/
+
+raw/
+raw_new/
+raw_incoming/
+
+labeled/
+labeled_all/
+labeled_new/
+labeled_incoming/
+
+
+# =========================
 # Python
+# =========================
 __pycache__/
 *.pyc
 *.egg-info/
-.venv/
-venv/
-env/
 
-# IDE / 系统
+
+# =========================
+# IDE
+# =========================
 .idea/
 .vscode/
+
+
+# =========================
+# System
+# =========================
 .DS_Store
+
+# documentation temporary files
+docs/
+
+# temporary tree file
+project_tree.txt
