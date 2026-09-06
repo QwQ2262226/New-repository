@@ -51,8 +51,6 @@ __pycache__/
 # =========================
 .DS_Store
 
-# documentation temporary files
-docs/
 
 # temporary tree file
 project_tree.txt
